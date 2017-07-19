@@ -7,7 +7,6 @@
     tools:context="com.example.aman.rashmihardware.MainActivity"
     android:orientation="vertical">
 
-<<<<<<< HEAD
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -173,6 +172,4 @@
     </LinearLayout>
 
 
-
->>>>>>> c925a7c3dadb8a0b37b0dfe31d0ebf5640862723
 </LinearLayout>
