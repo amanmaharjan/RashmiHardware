@@ -1,18 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.aman.rashmihardware.MainActivity">
+    tools:context="com.example.aman.rashmihardware.MainActivity"
+    android:orientation="vertical">
 
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World! TO rarhsmi"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/Category_txt"
+        android:layout_width="162dp"
+        android:layout_height="52dp"
+        android:text="Category"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/Category_ed"
+        android:layout_width="196dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Category"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="16dp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/Name_txt"
+            android:layout_width="162dp"
+            android:layout_height="52dp"
+            android:text="Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="66dp" />
+        <EditText
+            android:id="@+id/Name_ed"
+            android:layout_width="196dp"
+            android:layout_height="52dp"
+            android:ems="10"
+            android:inputType="text|textPersonName"
+            android:text="Name"
+            tools:layout_editor_absoluteX="172dp"
+            tools:layout_editor_absoluteY="68dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/Size_txt"
+            android:layout_width="162dp"
+            android:layout_height="52dp"
+            android:text="Size"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="118dp" />
+        <EditText
+            android:id="@+id/Size_ed"
+            android:layout_width="196dp"
+            android:layout_height="52dp"
+            android:ems="10"
+            android:inputType="text|textPersonName"
+            android:text="Size"
+            tools:layout_editor_absoluteX="178dp"
+            tools:layout_editor_absoluteY="118dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/Quantity_txt"
+            android:layout_width="160dp"
+            android:layout_height="52dp"
+            android:text="Quantity"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="170dp" />
+        <EditText
+            android:id="@+id/Quantity_ed"
+            android:layout_width="196dp"
+            android:layout_height="52dp"
+            android:ems="10"
+            android:inputType="text|textPersonName"
+            android:text="Quantity"
+            tools:layout_editor_absoluteX="178dp"
+            tools:layout_editor_absoluteY="170dp" />
+    </LinearLayout>
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/ActualPrice_txt"
+        android:layout_width="162dp"
+        android:layout_height="52dp"
+        android:text="Actual Price"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="274dp" />
+    <EditText
+        android:id="@+id/ActualPrice_ed"
+        android:layout_width="196dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Actual Price"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="274dp" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/MarginalPrice_txt"
+        android:layout_width="162dp"
+        android:layout_height="52dp"
+        android:text="Marginal Price"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="222dp" />
+    <EditText
+        android:id="@+id/MarginalPrice_ed"
+        android:layout_width="196dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Marginal Price"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="229dp" />
+</LinearLayout>
+
+</LinearLayout>
