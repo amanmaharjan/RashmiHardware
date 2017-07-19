@@ -7,6 +7,7 @@
     tools:context="com.example.aman.rashmihardware.MainActivity"
     android:orientation="vertical">
 
+<<<<<<< HEAD
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -148,4 +149,30 @@
         tools:layout_editor_absoluteY="229dp" />
 </LinearLayout>
 
+=======
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Button
+            android:id="@+id/btn_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </LinearLayout>
+
+
+
+>>>>>>> c925a7c3dadb8a0b37b0dfe31d0ebf5640862723
 </LinearLayout>
