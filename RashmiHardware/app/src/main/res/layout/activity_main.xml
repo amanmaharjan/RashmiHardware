@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.aman.rashmihardware.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="20dp">
 
 
 <LinearLayout
@@ -165,7 +166,7 @@
             android:id="@+id/btn_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="View"
             tools:layout_editor_absoluteX="124dp"
             tools:layout_editor_absoluteY="16dp" />
 

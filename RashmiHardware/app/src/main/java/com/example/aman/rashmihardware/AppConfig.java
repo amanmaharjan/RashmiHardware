@@ -10,4 +10,7 @@ public class AppConfig {
 
     // Server user login url
     public static String URL_Nail_submit = "http://"+ip+"/phpapi/nails.php";
+
+    // For search Nails
+    public static String URL_Nail_Search = "http://"+ip+"/phpapi/nailsearch.php";
 }
