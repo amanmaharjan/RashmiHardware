@@ -46,7 +46,7 @@ public class NailDetailAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         myHolder.Category.setText(data.get(position).get("Category"));
         myHolder.Size.setText(data.get(position).get("Size"));
         myHolder.Qunntity.setText(data.get(position).get("Qunntity"));
-        myHolder.ActuaPrice.setText(data.get(position).get("ActuaPrice"));
+        myHolder.ActuaPrice.setText(data.get(position).get("ActualPrice"));
         myHolder.SellingPrice.setText(data.get(position).get("SellingPrice"));
 
     }

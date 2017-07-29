@@ -102,9 +102,17 @@ public class ViewNails extends AppCompatActivity {
                     {
                         JSONObject c = myarray.getJSONObject(i);
                         String Category = c.getString("Category");
+                        String Size = c.getString("Size");
+                        String Quantity = c.getString("Quantity");
+                        String ActualPrice = c.getString("ActualPrice");
+                        String SellingPrice = c.getString("SellingPrice");
 
                         HashMap<String, String> NailDetails = new HashMap<>();
                         NailDetails.put("Category", Category);
+                        NailDetails.put("Size", Size);
+                        NailDetails.put("Quantity", Quantity);
+                        NailDetails.put("ActualPrice", ActualPrice);
+                        NailDetails.put("SellingPrice", SellingPrice);
 
                         //adding to  the array list
                         NailData.add(NailDetails);
