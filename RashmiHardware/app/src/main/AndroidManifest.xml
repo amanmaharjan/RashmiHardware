@@ -22,7 +22,8 @@
         <activity
             android:name=".ViewNails"
             android:label="@string/title_activity_view_nails"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Nails_update_delete"></activity>
     </application>
 
 </manifest>

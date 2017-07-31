@@ -81,6 +81,22 @@ public class ViewNails extends AppCompatActivity {
             }
         });
 
+        data.addOnItemTouchListener(new RecyclerItemClickListener(this, data, new RecyclerItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+
+                Toast.makeText(getApplicationContext(), "You clicked an item"+ position, Toast.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void onLongItemClick(View view, int position) {
+
+            }
+        }));
+
+
+
 
 
         display();

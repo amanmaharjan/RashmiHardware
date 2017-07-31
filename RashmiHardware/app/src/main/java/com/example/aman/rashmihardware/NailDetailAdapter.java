@@ -1,6 +1,7 @@
 package com.example.aman.rashmihardware;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,16 +25,17 @@ public class NailDetailAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     ArrayList<HashMap<String, String>> data;
 
     // create constructor to initialize context and data sent from MainActivity
-   public NailDetailAdapter(Context context, ArrayList<HashMap<String, String>> data){
-        this.context=context;
-        inflater= LayoutInflater.from(context);
-        this.data=data;
+    public NailDetailAdapter(Context context, ArrayList<HashMap<String, String>> data) {
+        this.context = context;
+        inflater = LayoutInflater.from(context);
+        this.data = data;
     }
+
     // Inflate the layout when ViewHolder created
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view=inflater.inflate(R.layout.activity_nail_listview, parent,false);
-        MyHolder holder=new MyHolder(view);
+        View view = inflater.inflate(R.layout.activity_nail_listview, parent, false);
+        MyHolder holder = new MyHolder(view);
         return holder;
     }
 
@@ -42,12 +44,13 @@ public class NailDetailAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
 
         // Get current position of item in RecyclerView to bind data and assign values from list
-        MyHolder myHolder= (MyHolder) holder;
+        MyHolder myHolder = (MyHolder) holder;
         myHolder.Category.setText(data.get(position).get("Category"));
         myHolder.Size.setText(data.get(position).get("Size"));
         myHolder.Qunntity.setText(data.get(position).get("Qunntity"));
         myHolder.ActuaPrice.setText(data.get(position).get("ActualPrice"));
         myHolder.SellingPrice.setText(data.get(position).get("SellingPrice"));
+
 
     }
 
@@ -58,7 +61,7 @@ public class NailDetailAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     }
 
 
-    class MyHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    class MyHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView Category;
         TextView Size;
@@ -69,22 +72,32 @@ public class NailDetailAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         // create constructor to get widget reference
         public MyHolder(View itemView) {
             super(itemView);
-            Category= (TextView) itemView.findViewById(R.id.txt_nail_category);
+            Category = (TextView) itemView.findViewById(R.id.txt_nail_category);
             Size = (TextView) itemView.findViewById(R.id.txt_nail_Size);
             Qunntity = (TextView) itemView.findViewById(R.id.txt_nail_Quantity);
             ActuaPrice = (TextView) itemView.findViewById(R.id.txt_nail_ActualPrice);
             SellingPrice = (TextView) itemView.findViewById(R.id.txt_nail_SellingPrice);
-            itemView.setOnClickListener(this);
+            //itemView.setOnClickListener(this);
+        /*    itemView.setOnClickListener(new RecyclerItemClickListener.OnItemClickListener(itemView,) {
+                @Override
+                public void onItemClick(View view, int position) {
+
+                }
+
+                @Override
+                public void onLongItemClick(View view, int position) {
+
+                }
+            });
+
+
+
+    */
         }
 
-        // Click event for all items
         @Override
         public void onClick(View v) {
 
-            Toast.makeText(context, "You clicked an item", Toast.LENGTH_SHORT).show();
-
         }
-
     }
-
 }
