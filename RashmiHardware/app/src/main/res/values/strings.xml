@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RashmiHardware</string>
+    <array name="Category">
+        <item>Head</item>
+        <item>Headless</item>
+        <item>Jasta</item>
+        <item>Normal</item>
+        <item>Parda</item>
+        <item>Drilling Screw</item>
+        <item>Roffing Bolt wiht Nut</item>
+
+    </array>
+    <string name="title_activity_view_nails">ViewNails</string>
+
+</resources>
